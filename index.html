@@ -665,9 +665,11 @@ section {
 .leadership-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  background: var(--border);
+  gap: 0;
+  background: var(--bg);
   margin-top: 20px;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 
 .lead-card {
@@ -676,6 +678,8 @@ section {
   transition: background 0.3s;
   position: relative;
   overflow: hidden;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .lead-card:hover { background: var(--surface); }
